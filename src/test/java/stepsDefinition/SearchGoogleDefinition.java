@@ -31,7 +31,7 @@ public class SearchGoogleDefinition {
         capabilities.setCapability("browserVersion", "109.0");
         capabilities.setCapability("enableVNC", true);
         capabilities.setCapability("enableVideo", true);
-        driver = new RemoteWebDriver(new URL("http://192.168.1.150:4444/wd/hub"), capabilities);
+        driver = new RemoteWebDriver(new URL("http://192.168.1.161:4444/wd/hub"), capabilities);
         // Load home page
         driver.get("https://www.google.com/");
         // Window maximize
