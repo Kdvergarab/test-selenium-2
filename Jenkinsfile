@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: "*/main"]], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [],
-                userRemoteConfigs: [[credentialsId: 'github-credentials', url: "https://github.com/johanfabi/test-selenium"]]])
+                userRemoteConfigs: [[credentialsId: 'github-credentials', url: "https://github.com/Kdvergarab/test-selenium-2"]]])
             }
         }
         stage('Test') {
